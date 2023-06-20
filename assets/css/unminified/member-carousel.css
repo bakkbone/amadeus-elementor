@@ -1,0 +1,135 @@
+/*------------------------------------------------------------------
+Member
+-------------------------------------------------------------------*/
+.amadeus-member-carousel-wrap {
+	position: relative;
+	width: 100%;
+}
+
+.amadeus-member-carousel-wrap .swiper-container {
+	width: 95%;
+}
+
+.amadeus-member-carousel-wrap .swiper-container.has-dots {
+	padding-bottom: 10px;
+}
+
+.amadeus-member-carousel-wrap .swiper-slide {
+	padding: 0 15px;
+	text-align: center;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-image {
+	margin-bottom: 15px;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-image img {
+	width: 100%;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-content {
+	margin-bottom: 15px;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-name {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-role {
+	display: block;
+	font-size: 13px;
+	margin-bottom: 13px;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-social {
+	list-style: none;
+	margin: 10px 0 0;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-social li {
+	display: inline-block;
+	text-align: center;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-social li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-social li a {
+	font-size: 18px;
+	line-height: 1;
+}
+
+.amadeus-member-carousel-wrap .amadeus-member-carousel-social li a i {
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	display: inline-block;
+}
+
+.amadeus-member-carousel-wrap .amadeus-swiper-buttons {
+	background-image: none;
+	color: #222;
+	outline: none;
+	margin-top: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	top: calc(50% - (20px/2));
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.amadeus-member-carousel-wrap .swiper-button-next {
+	right: 0;
+}
+
+.amadeus-member-carousel-wrap .swiper-button-prev {
+	left: 0;
+}
+
+.amadeus-member-carousel-wrap .swiper-pagination {
+	position: static;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.amadeus-member-carousel-wrap .swiper-pagination-bullet {
+	background: #ccc;
+	margin: 0 4px;
+	height: 8px;
+	width: 8px;
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.amadeus-member-carousel-wrap .swiper-pagination-bullet-active {
+	background: #000;
+}
+
+.amadeus-member-carousel-wrap .swiper-container-coverflow .swiper-slide {
+	padding: 0;
+}
+
+/* RTL */
+body.rtl .amadeus-member-carousel-wrap .amadeus-member-carousel-social li:not(:last-child) {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+body.rtl .amadeus-member-carousel-wrap .swiper-button-next {
+	right: auto;
+	left: 0;
+}
+
+body.rtl .amadeus-member-carousel-wrap .swiper-button-prev {
+	left: auto;
+	right: 0;
+}

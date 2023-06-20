@@ -1,0 +1,258 @@
+/*------------------------------------------------------------------
+Testimonial
+-------------------------------------------------------------------*/
+.amadeus-testimonial-wrapper.amadeus-testimonial-bubble .amadeus-testimonial-content {
+	position: relative;
+	background-color: #f4f4f4;
+	padding: 20px;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-bubble .amadeus-testimonial-content:after {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-color: #f4f4f4;
+	position: absolute;
+	top: calc(100% - 7px);
+	-webkit-transform: scaleX(0.75) rotate(45deg);
+	-ms-transform: scaleX(0.75) rotate(45deg);
+	transform: scaleX(0.75) rotate(45deg);
+	border-width: 0;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-bubble.amadeus-testimonial-text-align-left .amadeus-testimonial-content:after {
+	left: calc(20px + (50px/2));
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-bubble.amadeus-testimonial-text-align-center .amadeus-testimonial-content:after {
+	left: 50%;
+	-webkit-transform: translateX(-50%) scaleX(0.75) rotate(45deg);
+	-ms-transform: translateX(-50%) scaleX(0.75) rotate(45deg);
+	transform: translateX(-50%) scaleX(0.75) rotate(45deg);
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-bubble.amadeus-testimonial-text-align-right .amadeus-testimonial-content:after {
+	right: calc(20px + (50px/2));
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-before .amadeus-testimonial-image {
+	padding-right: 20px;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-before .amadeus-testimonial-symbol {
+	padding-left: 20px;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-after .amadeus-testimonial-image {
+	padding-left: 20px;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-after .amadeus-testimonial-symbol {
+	padding-right: 20px;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline .amadeus-testimonial-image {
+	width: 30%;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline .amadeus-testimonial-image img {
+	width: 100%;
+	height: auto;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline .amadeus-testimonial-content {
+	margin: 0;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline .amadeus-testimonial-meta {
+	margin-top: 15px;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-inline .amadeus-testimonial-symbol {
+	margin: 0;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-text-align-left {
+	text-align: left;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-text-align-left .amadeus-testimonial-symbol {
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-text-align-center {
+	text-align: center;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-text-align-center .amadeus-testimonial-symbol {
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-text-align-right {
+	text-align: right;
+}
+
+.amadeus-testimonial-wrapper.amadeus-testimonial-text-align-right .amadeus-testimonial-symbol {
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-symbol {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-symbol .amadeus-testimonial-symbol-inner {
+	font-size: 50px;
+	line-height: 1;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-symbol path {
+	fill: #dadada;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-content {
+	font-size: 22px;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta {
+	width: 100%;
+	line-height: 1;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-aside .amadeus-testimonial-image,
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-aside .amadeus-testimonial-details {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-aside .amadeus-testimonial-image {
+	padding-right: 15px;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-aside .amadeus-testimonial-details {
+	text-align: left;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-top .amadeus-testimonial-image {
+	margin-bottom: 10px;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-top .amadeus-testimonial-details {
+	display: block;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-meta-inner {
+	display: inline-block;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-image img {
+	height: 60px;
+	width: 60px;
+	max-width: 100%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-name {
+	display: block;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-company {
+	display: block;
+	font-size: 12px;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating {
+	padding: 0;
+	margin: 10px 0 0;
+	list-style: none;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating li {
+	display: inline-block;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating li svg {
+	fill: #d8d8d8;
+	width: 1em;
+	height: 1em;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-five li svg {
+	fill: #f2b01e;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-four li:nth-child(1) svg,
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-four li:nth-child(2) svg,
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-four li:nth-child(3) svg,
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-four li:nth-child(4) svg {
+	fill: #f2b01e;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-three li:nth-child(1) svg,
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-three li:nth-child(2) svg,
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-three li:nth-child(3) svg {
+	fill: #f2b01e;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-two li:nth-child(1) svg,
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-two li:nth-child(2) svg {
+	fill: #f2b01e;
+}
+
+.amadeus-testimonial-wrapper .amadeus-testimonial-rating.rating-one li:nth-child(1) svg {
+	fill: #f2b01e;
+}
+
+/* RTL */
+body.rtl .amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-aside .amadeus-testimonial-image {
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+body.rtl .amadeus-testimonial-wrapper .amadeus-testimonial-meta.amadeus-testimonial-image-position-aside .amadeus-testimonial-details {
+	text-align: right;
+}
+
+/* Responsive */
+@media only screen and (max-width: 959px) {
+	body .amadeus-testimonial-wrapper.amadeus-testimonial-inline {
+		flex-direction: column;
+	}
+	body .amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-before .amadeus-testimonial-image {
+		padding: 0 0 20px;
+	}
+	body .amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-before .amadeus-testimonial-symbol {
+		padding: 20px 0 0;
+	}
+	body .amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-after .amadeus-testimonial-image {
+		padding: 20px 0 0;
+	}
+	body .amadeus-testimonial-wrapper.amadeus-testimonial-inline.amadeus-testimonial-image-after .amadeus-testimonial-symbol {
+		padding: 0 0 20px;
+	}
+}

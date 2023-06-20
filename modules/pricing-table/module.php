@@ -1,0 +1,21 @@
+<?php
+namespace AmadeusElementor\Modules\PricingTable;
+
+use AmadeusElementor\Base\Module_Base;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
+class Module extends Module_Base {
+
+	public function get_widgets() {
+		return [
+			'Pricing_Table',
+		];
+	}
+
+	public function get_name() {
+		return 'amadeus-pricing-table';
+	}
+}

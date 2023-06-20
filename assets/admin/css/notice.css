@@ -1,0 +1,109 @@
+.amadeus-notice {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 0;
+	padding: 0;
+	padding-left: 50px;
+}
+
+.amadeus-notice .amadeus-notice-icon {
+	position: absolute;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 50px;
+	height: 100%;
+	font-size: 20px;
+	background-color: #ff9d52;
+}
+
+.amadeus-notice.amadeus-review-notice .amadeus-notice-icon {
+	background-color: #fec107;
+}
+
+.amadeus-notice svg {
+	width: 1em;
+	height: 1em;
+	fill: #fff;
+}
+
+.amadeus-notice .amadeus-notice-content {
+	padding: 5px 10px;
+}
+
+.amadeus-notice .amadeus-notice-content p {
+	margin: 0;
+}
+
+.amadeus-notice .amadeus-notice-content a {
+	display: inline-block;
+	background-color: #ff9d52;
+	color: #fff;
+	border: 1px solid #ff9d52;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border-radius: 2px;
+	transition: .3s;
+}
+
+.amadeus-notice .amadeus-notice-content a:hover {
+	background-color: #fff5ed;
+	color: #ff9d52;
+	border-color: #e8cab2;
+}
+
+.amadeus-notice.amadeus-review-notice .amadeus-notice-content a {
+	background-color: #fec107;
+	border-color: #fec107;
+}
+
+.amadeus-notice.amadeus-review-notice .amadeus-notice-content a:hover {
+	background-color: #fffbee;
+	color: #fec107;
+	border-color: #e7dab0;
+}
+
+.amadeus-notice .amadeus-notice-content a.amadeus-notice-dismiss {
+	background-color: #f4f4f5;
+	color: #909399;
+	border-color: #d3d4d6;
+}
+
+.amadeus-notice .amadeus-notice-content a.amadeus-notice-dismiss:hover {
+	background-color: #909399;
+	color: #fff;
+	border-color: #909399;
+}
+
+.amadeus-notice .notice-dismiss {
+	bottom: 0;
+}
+
+/* RTL */
+body.rtl .amadeus-notice {
+	padding-left: 0;
+	padding-right: 50px;
+}
+
+body.rtl .amadeus-notice .amadeus-notice-icon {
+	left: auto;
+	right: 0;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+	.amadeus-notice {
+		padding-left: 0;
+	}
+	body.rtl .amadeus-notice {
+		padding-right: 0;
+	}
+	.amadeus-notice .amadeus-notice-icon,
+	.amadeus-notice .notice-dismiss {
+		display: none;
+	}
+}

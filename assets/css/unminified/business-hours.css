@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+Business Hours
+-------------------------------------------------------------------*/
+.amadeus-business-hours .amadeus-business-hours-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.amadeus-business-hours .amadeus-business-timing {
+	text-align: right;
+	flex: 1;
+}
+
+.amadeus-business-hours .amadeus-icon {
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	position: relative;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+/* RTL */
+body.rtl .amadeus-business-hours .amadeus-icon {
+	padding-right: 0;
+	padding-left: 5px;
+}

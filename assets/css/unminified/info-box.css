@@ -1,0 +1,244 @@
+/*------------------------------------------------------------------
+Info Box
+-------------------------------------------------------------------*/
+.amadeus-info-box-wrap {
+	display: block;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.amadeus-info-box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.amadeus-info-box .amadeus-info-box-icon-wrap {
+	margin-bottom: 15px;
+}
+
+.amadeus-info-box .amadeus-info-box-icon {
+	display: inline-block;
+	line-height: 1;
+	color: #818a91;
+	font-size: 50px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.amadeus-info-box .amadeus-info-box-icon i {
+	text-align: center;
+}
+
+.amadeus-info-box .amadeus-info-box-icon i, .amadeus-info-box .amadeus-info-box-icon svg {
+	width: 1em;
+	height: 1em;
+	position: relative;
+}
+
+.amadeus-info-box img {
+	display: block;
+	width: 90px;
+}
+
+.amadeus-info-box .amadeus-info-box-divider-wrap {
+	font-size: 0;
+	line-height: 0;
+}
+
+.amadeus-info-box .amadeus-info-box-divider {
+	display: inline-block;
+}
+
+.amadeus-info-box-left .amadeus-info-box-wrap {
+	text-align: left;
+}
+
+.amadeus-info-box-left .amadeus-info-box {
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.amadeus-info-box-left .amadeus-info-box .amadeus-info-box-icon-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-shrink: 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+
+.amadeus-info-box-left .amadeus-info-box .amadeus-info-box-icon {
+	width: 100%;
+}
+
+.amadeus-info-box-top .amadeus-info-box img {
+	margin: 0 auto;
+}
+
+.amadeus-info-box-right .amadeus-info-box-wrap {
+	text-align: right;
+}
+
+.amadeus-info-box-right .amadeus-info-box {
+	-webkit-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.amadeus-info-box-right .amadeus-info-box .amadeus-info-box-icon-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-shrink: 0;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.amadeus-info-box-right .amadeus-info-box .amadeus-info-box-icon {
+	width: 100%;
+}
+
+.amadeus-info-box-align-left .amadeus-info-box {
+	text-align: left;
+}
+
+.amadeus-info-box-align-center .amadeus-info-box {
+	text-align: center;
+}
+
+.amadeus-info-box-align-right .amadeus-info-box {
+	text-align: right;
+}
+
+.amadeus-info-box-btn-wrap {
+	margin-top: 15px;
+}
+
+.amadeus-info-box-btn-wrap .amadeus-info-box-button i, .amadeus-info-box-btn-wrap .amadeus-info-box-button svg {
+	width: 1em;
+	height: 1em;
+	position: relative;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 1024px) {
+	.amadeus-info-box-tablet-top .amadeus-info-box {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.amadeus-info-box-tablet-top .amadeus-info-box .amadeus-info-box-icon-wrap {
+		display: inline-block;
+		margin: 0;
+	}
+	.amadeus-info-box-tablet-top .amadeus-info-box .amadeus-info-box-icon {
+		margin-right: auto;
+	}
+	.amadeus-info-box-tablet-left .amadeus-info-box {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+	.amadeus-info-box-tablet-left .amadeus-info-box .amadeus-info-box-icon-wrap {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-shrink: 0;
+		margin-right: 20px;
+	}
+	.amadeus-info-box-tablet-left .amadeus-info-box .amadeus-info-box-icon,
+	.amadeus-info-box-tablet-left .amadeus-info-box img {
+		width: 100%;
+	}
+	.amadeus-info-box-tablet-right .amadeus-info-box {
+		-webkit-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+	.amadeus-info-box-tablet-right .amadeus-info-box .amadeus-info-box-icon-wrap {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-shrink: 0;
+		margin-left: 20px;
+	}
+	.amadeus-info-box-tablet-right .amadeus-info-box .amadeus-info-box-icon,
+	.amadeus-info-box-tablet-right .amadeus-info-box img {
+		width: 100%;
+	}
+	.amadeus-info-box-align-tablet-left .amadeus-info-box {
+		text-align: left;
+	}
+	.amadeus-info-box-align-tablet-center .amadeus-info-box {
+		text-align: center;
+	}
+	.amadeus-info-box-align-tablet-right .amadeus-info-box {
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.amadeus-info-box-mobile-top .amadeus-info-box {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.amadeus-info-box-mobile-top .amadeus-info-box .amadeus-info-box-icon-wrap {
+		display: inline-block;
+		margin: 0;
+	}
+	.amadeus-info-box-mobile-top .amadeus-info-box .amadeus-info-box-icon {
+		margin-right: auto;
+	}
+	.amadeus-info-box-mobile-left .amadeus-info-box {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+	.amadeus-info-box-mobile-left .amadeus-info-box .amadeus-info-box-icon-wrap {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-shrink: 0;
+		margin-right: 20px;
+	}
+	.amadeus-info-box-mobile-left .amadeus-info-box .amadeus-info-box-icon,
+	.amadeus-info-box-mobile-left .amadeus-info-box img {
+		width: 100%;
+	}
+	.amadeus-info-box-mobile-right .amadeus-info-box {
+		-webkit-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+	.amadeus-info-box-mobile-right .amadeus-info-box .amadeus-info-box-icon-wrap {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-shrink: 0;
+		margin-left: 20px;
+	}
+	.amadeus-info-box-mobile-right .amadeus-info-box .amadeus-info-box-icon,
+	.amadeus-info-box-mobile-right .amadeus-info-box img {
+		width: 100%;
+	}
+	.amadeus-info-box-align-mobile-left .amadeus-info-box {
+		text-align: left;
+	}
+	.amadeus-info-box-align-mobile-center .amadeus-info-box {
+		text-align: center;
+	}
+	.amadeus-info-box-align-mobile-right .amadeus-info-box {
+		text-align: right;
+	}
+}

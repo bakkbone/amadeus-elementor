@@ -1,0 +1,546 @@
+/*------------------------------------------------------------------
+Call To Action
+-------------------------------------------------------------------*/
+.amadeus-cta {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.amadeus-cta .amadeus-cta-bg,
+.amadeus-cta .amadeus-cta-bg-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.amadeus-cta .amadeus-cta-bg-wrapper {
+	z-index: 1;
+	overflow: hidden;
+}
+
+.amadeus-cta .amadeus-cta-bg {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50%;
+	z-index: 1;
+}
+
+.amadeus-cta .amadeus-cta-bg-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.amadeus-cta .amadeus-cta-inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	padding: 30px;
+	width: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.amadeus-cta .amadeus-cta-content {
+	width: 100%;
+}
+
+.amadeus-cta .amadeus-cta-content:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.amadeus-cta .amadeus-icon {
+	display: inline-block;
+	font-size: 50px;
+	line-height: 1;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.amadeus-cta .amadeus-icon svg {
+	width: 1em;
+	height: 1em;
+	position: relative;
+	display: block;
+}
+
+.amadeus-cta .amadeus-cta-title {
+	width: 100%;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.amadeus-cta .amadeus-cta-btn a {
+	padding: 14px 30px;
+	font-size: 13px;
+}
+
+.amadeus-cta .amadeus-cta-btn .amadeus-cta-s-btn {
+	margin-left: 5px;
+}
+
+.amadeus-cta .amadeus-cta-btn i, .amadeus-cta .amadeus-cta-btn svg {
+	width: 1em;
+	height: 1em;
+	position: relative;
+}
+
+.amadeus-cta-style-inside .amadeus-cta .amadeus-cta-bg-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.amadeus-cta-style-inside .amadeus-cta .amadeus-icon,
+.amadeus-cta-style-inside .amadeus-cta .amadeus-cta-title,
+.amadeus-cta-style-inside .amadeus-cta .amadeus-cta-description {
+	color: #fff;
+}
+
+.amadeus-cta-style-outside .amadeus-cta {
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.amadeus-cta-style-outside .amadeus-cta .amadeus-cta-bg-wrapper {
+	position: relative;
+	min-height: 200px;
+	width: 100%;
+}
+
+.amadeus-cta-style-outside .amadeus-cta .amadeus-cta-inner {
+	background-color: #f5f5f5;
+}
+
+.amadeus-cta--image-above .amadeus-cta {
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.amadeus-cta--image-left .amadeus-cta,
+.amadeus-cta--image-right .amadeus-cta {
+	-ms-flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.amadeus-cta--image-left .amadeus-cta .amadeus-cta-bg-wrapper,
+.amadeus-cta--image-right .amadeus-cta .amadeus-cta-bg-wrapper {
+	width: auto;
+	min-width: 50%;
+}
+
+.amadeus-cta--image-left .amadeus-cta-inner,
+.amadeus-cta--image-right .amadeus-cta-inner {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.amadeus-cta--image-above .amadeus-cta {
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.amadeus-cta--image-left .amadeus-cta {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.amadeus-cta--image-right .amadeus-cta {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.amadeus-cta-valign-top .amadeus-cta .amadeus-cta-inner {
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.amadeus-cta-valign-bottom .amadeus-cta .amadeus-cta-inner {
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.amadeus-animated-content {
+	--translate: 0, 0;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-grow {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-shrink {
+	-webkit-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-shrink-contained {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-enter-zoom-out,
+.amadeus-animated-content:hover .amadeus-animated-enter-zoom-in,
+.amadeus-animated-content:hover .amadeus-animated-fade-in {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-zoom-out,
+.amadeus-animated-content:hover .amadeus-animated-exit-zoom-in,
+.amadeus-animated-content:hover .amadeus-animated-fade-out {
+	opacity: 0;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-zoom-out {
+	-webkit-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-zoom-in {
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-enter-from-right,
+.amadeus-animated-content:hover .amadeus-animated-enter-from-left,
+.amadeus-animated-content:hover .amadeus-animated-enter-from-top,
+.amadeus-animated-content:hover .amadeus-animated-enter-from-bottom {
+	opacity: 1;
+	-webkit-transform: translateY(0) translateX(0);
+	-ms-transform: translateY(0) translateX(0);
+	transform: translateY(0) translateX(0);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-to-right {
+	-webkit-transform: translateX(1000px);
+	-ms-transform: translateX(1000px);
+	transform: translateX(1000px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-to-left {
+	-webkit-transform: translateX(-1000px);
+	-ms-transform: translateX(-1000px);
+	transform: translateX(-1000px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-to-top {
+	-webkit-transform: translateY(-600px);
+	-ms-transform: translateY(-600px);
+	transform: translateY(-600px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-to-bottom {
+	-webkit-transform: translateY(600px);
+	-ms-transform: translateY(600px);
+	transform: translateY(600px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-exit-to-right,
+.amadeus-animated-content:hover .amadeus-animated-exit-to-left,
+.amadeus-animated-content:hover .amadeus-animated-exit-to-top,
+.amadeus-animated-content:hover .amadeus-animated-exit-to-bottom {
+	opacity: 0;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-right {
+	-webkit-transform: translateX(30px);
+	-ms-transform: translateX(30px);
+	transform: translateX(30px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-left {
+	-webkit-transform: translateX(-30px);
+	-ms-transform: translateX(-30px);
+	transform: translateX(-30px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-up {
+	-webkit-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	transform: translateY(-30px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-down {
+	-webkit-transform: translateY(30px);
+	-ms-transform: translateY(30px);
+	transform: translateY(30px);
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-contained-right {
+	--translate: 8%, 0;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-contained-left {
+	--translate: -8%, 0;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-contained-top {
+	--translate: 0, -8%;
+}
+
+.amadeus-animated-content:hover .amadeus-animated-move-contained-bottom {
+	--translate: 0, 8%;
+}
+
+.amadeus-animated-content *[class^="amadeus-animated-item"] {
+	will-change: transform, opacity;
+}
+
+.amadeus-animated-content .amadeus-animated-shrink-contained {
+	-webkit-transform: scale(1.17);
+	-ms-transform: scale(1.17);
+	transform: scale(1.17);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-zoom-in {
+	-webkit-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-zoom-out {
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-zoom-out,
+.amadeus-animated-content .amadeus-animated-enter-zoom-in,
+.amadeus-animated-content .amadeus-animated-fade-in {
+	opacity: 0;
+}
+
+.amadeus-animated-content .amadeus-animated-exit-zoom-out,
+.amadeus-animated-content .amadeus-animated-exit-zoom-in,
+.amadeus-animated-content .amadeus-animated-fade-out {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-from-right {
+	-webkit-transform: translateX(1000px);
+	-ms-transform: translateX(1000px);
+	transform: translateX(1000px);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-from-left {
+	-webkit-transform: translateX(-1000px);
+	-ms-transform: translateX(-1000px);
+	transform: translateX(-1000px);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-from-top {
+	-webkit-transform: translateY(-600px);
+	-ms-transform: translateY(-600px);
+	transform: translateY(-600px);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-from-bottom {
+	-webkit-transform: translateY(500px);
+	-ms-transform: translateY(500px);
+	transform: translateY(500px);
+}
+
+.amadeus-animated-content .amadeus-animated-enter-from-right,
+.amadeus-animated-content .amadeus-animated-enter-from-left,
+.amadeus-animated-content .amadeus-animated-enter-from-top,
+.amadeus-animated-content .amadeus-animated-enter-from-bottom {
+	opacity: 0;
+}
+
+.amadeus-animated-content .amadeus-animated-exit-to-right,
+.amadeus-animated-content .amadeus-animated-exit-to-left,
+.amadeus-animated-content .amadeus-animated-exit-to-top,
+.amadeus-animated-content .amadeus-animated-exit-to-bottom {
+	opacity: 1;
+	-webkit-transform: translateY(0) translateX(0);
+	-ms-transform: translateY(0) translateX(0);
+	transform: translateY(0) translateX(0);
+}
+
+.amadeus-animated-content .amadeus-animated-move-contained-right,
+.amadeus-animated-content .amadeus-animated-move-contained-left,
+.amadeus-animated-content .amadeus-animated-move-contained-top,
+.amadeus-animated-content .amadeus-animated-move-contained-bottom {
+	-webkit-transform: scale(1.2) translate(var(--translate));
+	-ms-transform: scale(1.2) translate(var(--translate));
+	transform: scale(1.2) translate(var(--translate));
+}
+
+.amadeus-bg-transform .amadeus-cta-bg {
+	will-change: transform;
+}
+
+.amadeus-bg-transform-zoom-in:hover .amadeus-cta-bg {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.amadeus-bg-transform-zoom-out .amadeus-cta-bg {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.amadeus-bg-transform-zoom-out:hover .amadeus-cta-bg {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.amadeus-bg-transform-move-left .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateX(8%);
+	-ms-transform: scale(1.2) translateX(8%);
+	transform: scale(1.2) translateX(8%);
+}
+
+.amadeus-bg-transform-move-left:hover .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateX(-8%);
+	-ms-transform: scale(1.2) translateX(-8%);
+	transform: scale(1.2) translateX(-8%);
+}
+
+.amadeus-bg-transform-move-right .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateX(-8%);
+	-ms-transform: scale(1.2) translateX(-8%);
+	transform: scale(1.2) translateX(-8%);
+}
+
+.amadeus-bg-transform-move-right:hover .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateX(8%);
+	-ms-transform: scale(1.2) translateX(8%);
+	transform: scale(1.2) translateX(8%);
+}
+
+.amadeus-bg-transform-move-up .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateY(8%);
+	-ms-transform: scale(1.2) translateY(8%);
+	transform: scale(1.2) translateY(8%);
+}
+
+.amadeus-bg-transform-move-up:hover .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateY(-8%);
+	-ms-transform: scale(1.2) translateY(-8%);
+	transform: scale(1.2) translateY(-8%);
+}
+
+.amadeus-bg-transform-move-down .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateY(-8%);
+	-ms-transform: scale(1.2) translateY(-8%);
+	transform: scale(1.2) translateY(-8%);
+}
+
+.amadeus-bg-transform-move-down:hover .amadeus-cta-bg {
+	-webkit-transform: scale(1.2) translateY(8%);
+	-ms-transform: scale(1.2) translateY(8%);
+	transform: scale(1.2) translateY(8%);
+}
+
+/* RTL */
+body.rtl .amadeus-cta .amadeus-cta-btn .amadeus-cta-s-btn {
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+/*------------------------------------------------------------------
+Responsive
+-------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+	.amadeus-cta--tablet-image-above .amadeus-cta {
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.amadeus-cta--tablet-image-above .amadeus-cta .amadeus-cta-bg-wrapper {
+		width: 100%;
+		min-width: 100%;
+	}
+	.amadeus-cta--tablet-image-left .amadeus-cta {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.amadeus-cta--tablet-image-right .amadeus-cta {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+}
+
+@media (max-width: 767px) {
+	.amadeus-cta--mobile-image-above .amadeus-cta {
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.amadeus-cta--mobile-image-above .amadeus-cta .amadeus-cta-bg-wrapper {
+		width: 100%;
+		min-width: 100%;
+	}
+	.amadeus-cta--mobile-image-left .amadeus-cta {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.amadeus-cta--mobile-image-right .amadeus-cta {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+}
