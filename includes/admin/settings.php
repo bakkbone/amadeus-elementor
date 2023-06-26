@@ -228,12 +228,12 @@ class Amadeus_Settings {
 
 		parse_str( $_POST['fields'], $settings );
 
-		// Saving MailChimp Api Key
+		// Saving MailChimp API Key
 		if ( isset( $settings['mailchimp_api_key'] ) ) {
 			update_option( 'amadeus_mailchimp_api_key', sanitize_text_field( $settings['mailchimp_api_key'] ) );
 		}
 
-		// Saving Google Map Api Key
+		// Saving Google Maps API Key
 		if ( isset( $settings['google_maps_api_key'] ) ) {
 			update_option( 'amadeus_google_maps_api_key', sanitize_text_field( $settings['google_maps_api_key'] ) );
 		}

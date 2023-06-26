@@ -14,7 +14,7 @@ class Google_Map extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Google Map', 'amadeus-elementor' );
+		return __( 'Google Maps', 'amadeus-elementor' );
 	}
 
 	public function get_icon() {

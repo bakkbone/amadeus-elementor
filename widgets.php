@@ -88,7 +88,7 @@ $widgets = [
 	],
 	'google-map' => [
 		'class'         => 'GoogleMap',
-		'title'         => __( 'Google Map', 'amadeus-elementor' ),
+		'title'         => __( 'Google Maps', 'amadeus-elementor' ),
 		'demo_link'     => 'https://www.amadeus-elementor.com/widgets/google-map/',
 	],
 	'gravity-forms' => [
