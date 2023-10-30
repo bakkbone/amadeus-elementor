@@ -16,11 +16,7 @@
 	min-width: 50px;
 	height: 100%;
 	font-size: 20px;
-	background-color: #ff9d52;
-}
-
-.amadeus-notice.amadeus-review-notice .amadeus-notice-icon {
-	background-color: #fec107;
+	background-color: #009;
 }
 
 .amadeus-notice svg {
@@ -39,9 +35,9 @@
 
 .amadeus-notice .amadeus-notice-content a {
 	display: inline-block;
-	background-color: #ff9d52;
+	background-color: #009;
 	color: #fff;
-	border: 1px solid #ff9d52;
+	border: 1px solid #009;
 	text-decoration: none;
 	text-transform: capitalize;
 	padding: 5px 10px;
@@ -51,20 +47,9 @@
 }
 
 .amadeus-notice .amadeus-notice-content a:hover {
-	background-color: #fff5ed;
-	color: #ff9d52;
-	border-color: #e8cab2;
-}
-
-.amadeus-notice.amadeus-review-notice .amadeus-notice-content a {
-	background-color: #fec107;
-	border-color: #fec107;
-}
-
-.amadeus-notice.amadeus-review-notice .amadeus-notice-content a:hover {
-	background-color: #fffbee;
-	color: #fec107;
-	border-color: #e7dab0;
+	background-color: #eef;
+	color: #009;
+	border-color: #b0b6e7;
 }
 
 .amadeus-notice .amadeus-notice-content a.amadeus-notice-dismiss {

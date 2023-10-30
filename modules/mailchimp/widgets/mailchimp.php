@@ -64,7 +64,7 @@ class Mailchimp extends Widget_Base {
 				'label'         => __( 'Mailchimp List', 'amadeus-elementor' ),
 				'type'          => Controls_Manager::SELECT,
 				'label_block'   => false,
-				'description'   => sprintf( __( 'You need to set your Api Key on the %1$ssettings page%2$s', 'amadeus-elementor' ), '<a href="' . add_query_arg( array( 'page' => 'amadeus-settings' ), esc_url( admin_url( 'admin.php' ) ) ) . '" target="_blank">', '</a>' ),
+				'description'   => sprintf( __( 'You need to set your API Key on the %1$ssettings page%2$s', 'amadeus-elementor' ), '<a href="' . add_query_arg( array( 'page' => 'amadeus-settings' ), esc_url( admin_url( 'admin.php' ) ) ) . '" target="_blank">', '</a>' ),
 				'options'       => amadeus_mailchimp_lists(),
 			]
 		);
@@ -1011,7 +1011,7 @@ class Mailchimp extends Widget_Base {
 
 			<?php
 		} else { ?>
-			<p class="amadeus-mc-error"><?php echo esc_html__( 'Please insert your api key', 'amadeus-elementor' ); ?></p>
+			<p class="amadeus-mc-error"><?php echo esc_html__( 'Please ensure your API key has been added in settings, and you have selected a list in this widget\'s settings.', 'amadeus-elementor' ); ?></p>
 			<?php
 		}
 
@@ -1088,7 +1088,7 @@ class Mailchimp extends Widget_Base {
 			</div>
 
 		<# } else { #>
-			<p class="amadeus-mc-error"><?php echo esc_html__( 'Please insert your api key', 'amadeus-elementor' ); ?></p>
+			<p class="amadeus-mc-error"><?php echo esc_html__( 'Please ensure your API key has been added in settings, and you have selected a list in this widget\'s settings.', 'amadeus-elementor' ); ?></p>
 		<# } #>
 
 		<?php

@@ -49,7 +49,7 @@ Instagram Feed
 	font-weight: 600;
 	line-height: 1.3;
 	margin: 0 0 4px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 .amadeus-insta .amadeus-insta-desc {
@@ -139,7 +139,7 @@ Instagram Feed
 	left: 0;
 	right: 0;
 	line-height: 1;
-	background-color: rgba(229, 191, 99, 0.7);
+	background-color: rgba(99, 139, 229, 0.7);
 	color: #fff;
 	-webkit-transform: scale(0.8);
 	-ms-transform: scale(0.8);

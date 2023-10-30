@@ -87,8 +87,8 @@ class Amadeus_Notices {
 				<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m29.911 13.75-6.229 6.072 1.471 8.576c.064.375-.09.754-.398.978-.174.127-.381.191-.588.191-.159 0-.319-.038-.465-.115l-7.702-4.049-7.701 4.048c-.336.178-.745.149-1.053-.076-.308-.224-.462-.603-.398-.978l1.471-8.576-6.23-6.071c-.272-.266-.371-.664-.253-1.025s.431-.626.808-.681l8.609-1.25 3.85-7.802c.337-.683 1.457-.683 1.794 0l3.85 7.802 8.609 1.25c.377.055.69.319.808.681s.019.758-.253 1.025z"/></svg>
 			</div>
 			<div class="amadeus-notice-content">
-				<p><?php esc_html_e( 'Thanks for using Amadeus For Elementor! Could you please do me a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation?', 'amadeus-elementor' ); ?></p>
-				<p><strong>~ Scott Landers<br>Operations Manager, BAKKBONE Australia</strong></p>
+				<p><?php esc_html_e( 'Thanks for using Amadeus Elementor! Could you please do us a huge favor and give it a 5-star rating on WordPress.org to help us spread the word and boost our motivation?', 'amadeus-elementor' ); ?></p>
+				<p><strong>– Team BAKKBONE</strong></p>
 
 				<div class="amadeus-notice-buttons">
 					<a href="https://wordpress.org/support/plugin/amadeus-elementor/reviews/?filter=5#new-post" rel="nofollow" target="_blank"><?php esc_html_e( 'Yes, you deserve it!', 'amadeus-elementor' ); ?></a>
